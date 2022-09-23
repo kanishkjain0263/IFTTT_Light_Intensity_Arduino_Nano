@@ -110,7 +110,7 @@ void loop() {
     count = 0;
     }
   }
-  else if (intensity > 100 && sunlight == false && count > 1000)
+  else if (intensity > 100 && sunlight == false)
   {
     count++;
     if (count > 5000)
