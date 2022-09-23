@@ -4,8 +4,8 @@
 BH1750FVI LightSensor(BH1750FVI::k_DevModeContLowRes);
 
 //please enter your sensitive data in the Secret tab
-char ssid[] = "kanishk";
-char pass[] = "kanishk02";
+char ssid[] = "********";
+char pass[] = "**********";
 
 WiFiClient client;
 
@@ -33,7 +33,7 @@ void setup() {
 }
 
 void sunlight_received() {
-  String PATH_NAME   = "/trigger/sunlight_recieved/with/key/_u16eoxBEbN1oPhUmTfyJim3t2PjsjRgzvv57ELsmX"; // change your EVENT-NAME and YOUR-KEY
+  String PATH_NAME   = "/trigger/sunlight_recieved/with/key/your-key"; // change your EVENT-NAME and YOUR-KEY
   
   // make a HTTP request:
     // send HTTP header
@@ -53,7 +53,7 @@ void sunlight_received() {
 }
 
 void sunlight_stopped() {
-  String PATH_NAME   = "/trigger/sunlight_stopped/with/key/_u16eoxBEbN1oPhUmTfyJim3t2PjsjRgzvv57ELsmX"; // change your EVENT-NAME and YOUR-KEY
+  String PATH_NAME   = "/trigger/sunlight_stopped/with/key/your-key"; // change your EVENT-NAME and YOUR-KEY
   
   // make a HTTP request:
     // send HTTP header
